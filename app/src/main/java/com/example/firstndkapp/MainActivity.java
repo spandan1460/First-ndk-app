@@ -3,7 +3,9 @@ package com.example.firstndkapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.firstndkapp.databinding.ActivityMainBinding;
 
@@ -26,6 +28,10 @@ public class MainActivity extends AppCompatActivity {
         // Example of a call to a native method
         TextView tv = binding.sampleText;
         tv.setText(stringFromJNI());
+    }
+    
+    public void button1(View view){
+        Toast.makeText(this, "I am Spandan Chakravarty", Toast.LENGTH_SHORT).show();
     }
 
     /**
